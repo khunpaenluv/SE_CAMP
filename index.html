@@ -7,18 +7,78 @@
     <body>
         <h1>Workshop #HTML-FORM</h1>
     </body>
-    <form>
-        <label for="fname">ชื่อ</label><td>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">สกุล</label><td>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="datetime-local">วัน/เดือน/ปีเกิด</label><td></td>
-        <input type="datetime-local">
-       </form>
-       <form>
-        <label for="fname">เพศ</label><td></td>
-        <input type="radio" id="male" name="fav_language" value="ชาย">
-        <label for="male">ชาย</label><td>
-        <input type="radio" id="female" name="fav_language" value="หญิง">
-        <label for="female">หญิง</label><td>
-       </form>
+       <table>
+       <tr>
+        <td>ชื่อ</td>
+        <td><input type="text"/></td>
+    </tr>
+    <tr>
+        <td>สกุล</td>
+        <td><input type="text"/></td>
+    </tr>
+    <tr>
+        <td>วัน/เดือน/ปีเกิด</td>
+        <td>
+            <input type="datetime-local" />
+        </td>
+    </tr>
+    <tr>
+        <td>อายุ</td>
+        <td>
+            <input id="ชาย"
+                   type="เพศ" 
+                   name="same_radio"/>
+        </td>
+    </tr>
+    <tr>
+        <td>input checkbox</td>
+        <td>
+            <input type="checkbox"
+                  name="my_checkbox">Checkbox A
+            <br>
+            <input type="checkbox"
+                  name="my_checkbox">Checkbox B
+        </td>
+    </tr>
+    <tr>
+        <td>text area</td>
+        <td><textarea rows="4" 
+        placeholder="กรุณาป้อนข้อมูล"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            select
+        </td>
+        <td>
+            <select>
+                <option 
+                value=""
+                disabled 
+                selected>-</option>
+                <option>A</option>
+                <option>B</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            File
+        </td>
+        <td><input type="file"></td>
+    </tr>
+    <tr>
+        <td>
+            button
+        </td>
+        <td>
+            <input type="button" 
+                    value="ข้อความ B">
+            <input type="reset" 
+                    value="ข้อความ Reset">
+            <input type="submit" value="ข้อความ S">
+            <button type="submit">ข้อความ S</button>
+            <button type="button">ข้อความ B</button>
+        </td>
+    </tr>
+</html>
