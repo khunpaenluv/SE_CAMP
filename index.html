@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html> 
+    <td>65160210</td>
     <head>
         <title>Page Title</title>
         <meta charset="utf-8" />
@@ -25,30 +26,35 @@
     <tr>
         <td>อายุ</td>
         <td>
-            <input id="ชาย"
-                   type="เพศ" 
+            <input id="อายุ"
+                   type="age" 
                    name="same_radio"/>
         </td>
     </tr>
     <tr>
-        <td>input checkbox</td>
+        <td>เพศ</td>
         <td>
-            <input type="checkbox"
-                  name="my_checkbox">Checkbox A
-            <br>
-            <input type="checkbox"
-                  name="my_checkbox">Checkbox B
+            <input type="radio"
+                  name="radio">ชาย
+            <input type="radio"
+                  name="my_checkbox">หญิง
         </td>
     </tr>
     <tr>
-        <td>text area</td>
+        <td>
+            รูป
+        </td>
+        <td><input type="file"></td>
+        </tr>
+    <tr>
+        <td>ที่อยู๋</td>
         <td><textarea rows="4" 
         placeholder="กรุณาป้อนข้อมูล"></textarea>
         </td>
     </tr>
     <tr>
         <td>
-            select
+            สีที่ชอบ
         </td>
         <td>
             <select>
@@ -56,29 +62,40 @@
                 value=""
                 disabled 
                 selected>-</option>
-                <option>A</option>
-                <option>B</option>
+                <option>แดง</option>
+                <option>น้ำเงิน</option>
+                <option>เหลือง</option>
             </select>
         </td>
     </tr>
     <tr>
+        <td>แนวเพลงที่ชอบ</td>
         <td>
-            File
+            <input type="radio"
+                  name="radio">เพื่อชีวิต
+            <input type="radio"
+                  name="my_checkbox">ลูกทุ่ง
+              <input type="radio"
+                  name="my_checkbox">อื่นๆ
         </td>
-        <td><input type="file"></td>
     </tr>
     <tr>
         <td>
-            button
-        </td>
-        <td>
-            <input type="button" 
-                    value="ข้อความ B">
-            <input type="reset" 
-                    value="ข้อความ Reset">
-            <input type="submit" value="ข้อความ S">
-            <button type="submit">ข้อความ S</button>
-            <button type="button">ข้อความ B</button>
+            <br>
+        <input type="checkbox"
+            name="checkbox">ยินยอมให้เก็บข้อมูล
         </td>
     </tr>
+    <tr>
+        <td>
+            <br>
+            <br> 
+            <input type="reset" value="Reset">
+            <td>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </td>   
+    </tr>
+       
 </html>
