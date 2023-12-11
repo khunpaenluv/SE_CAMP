@@ -1,0 +1,16 @@
+.box{
+    width: 400px;
+    height: 400px;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(30deg, #ff0000, #ff8000, #ffbf00, #ffff00, #80ff00, #00ff80, #00ffbf, #00ffff, #0080ff, #0000ff, #8000ff, #bf00ff);
+    text-align: center;
+    line-height: 400px;
+    padding-top: 10px;
+    margin: 50px 25px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.box:hover{
+    box-shadow: 0px 0px 10px 0px #ff0000, 0px 0px 20px 5px #ff8000, 0px 0px 30px 10px #ffbf00, 0px 0px 40px 15px #ffff00, 0px 0px 50px 20px #80ff00, 0px 0px 60px 25px #00ff80, 0px 0px 70px 30px #00ffbf, 0px 0px 80px 35px #00ffff, 0px 0px 90px 40px #0080ff, 0px 0px 100px 45px #0000ff, 0px 0px 110px 50px #8000ff, 0px 0px 120px 55px #bf00ff;
+    transform: translate(70px, 70px);
+}
