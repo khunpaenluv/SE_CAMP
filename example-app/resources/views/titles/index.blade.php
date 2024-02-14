@@ -59,7 +59,6 @@
                             <div class="card-footer">
                                 <button type="submit" class="btn btn-success">บันทึก</button>
                             </div>
-
                         </form>
                     </div>
                     <!-- /.card -->
@@ -94,11 +93,6 @@
                                         <td>
                                             <a href="{{ url('/titles/' . $title->tit_id) }}"
                                                 class="btn btn-warning">แก้ไข</a>
-                                            <form method="post" action="/titles/{{ $title->tit_id }}">
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit" class="btn btn-danger">ลบ</button>
-                                            </form>
                                         </td>
                                     </tr>
                                     <?php } ?>
@@ -113,11 +107,4 @@
         </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
-    <form method="post" action="{{ url('/logout') }}">
-        @csrf
-        <div class="card-footer">
-            <button type="submit" class="btn btn-danger"
-                onclick="return confirm('คุณต้องการออกจากระบบ');">ออกจากระบบ</button>
-        </div>
-    </form>
 @endsection

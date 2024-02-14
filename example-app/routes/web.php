@@ -15,6 +15,7 @@ use App\http\Controllers\C_titles;
 |
 */
 Route::resource('titles', C_titles::class);
+
 Route::get('/my-controller',[MyController::class,'index'] );
 Route::get('/my-controller2', 'App\Http\Controllers\MyController@index');
 Route::namespace('App\Http\Controllers')->group(function(){
@@ -28,7 +29,7 @@ Route::get('/', function () {
 });
 Route::get('/my-route',function(){
 
-    $data=['val_a'=>'แม่สูตรคูณ'];
+    $data=['val_a'=>'Hello World!'];
     $data['val_b']="Laravel";
     return view('myfolder.mypage',$data);
 });
